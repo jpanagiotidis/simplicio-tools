@@ -1,0 +1,25 @@
+.simplicioNavigation{
+  margin-bottom: 0px;
+  border: 0px none;
+
+  a{
+    cursor: pointer;
+
+    &#logo{
+      padding: 0px;
+      height: 60px;
+
+      img{
+        height: 100%;
+      }
+    }
+  }
+}
+
+#admin-menu{
+  z-index: 9999;
+}
+
+body.admin-menu .simplicioNavigation.navbar-fixed-top{
+  margin-top: 29px !important;
+}

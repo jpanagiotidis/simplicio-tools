@@ -1,0 +1,23 @@
+.simplicioVerticalAlignFrame{
+  @include vertical-align-holder()
+}
+
+.simplicioVerticalAlignContent{
+  @include vertical-align-content()
+}
+
+span.simplicioLetter{
+  font-size: 3.3333em;
+  @include border-radius($simplicio-first-letter-corners);
+  width: 1.2em;
+  height: 1.5em;
+  line-height: 1.4em;
+  float: left;
+  color: $simplicio-first-letter-color;
+  background: $simplicio-first-letter-bg;
+  margin-right: 15px;
+  margin-top: 5px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+}

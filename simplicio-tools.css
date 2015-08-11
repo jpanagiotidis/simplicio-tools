@@ -1,0 +1,113 @@
+.simplicioVerticalAlignFrame {
+  display: table;
+  width: 100%;
+  min-height: 100%;
+}
+
+.simplicioVerticalAlignContent {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+span.simplicioLetter {
+  font-size: 3.3333em;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px 20px 20px 20px;
+  width: 1.2em;
+  height: 1.5em;
+  line-height: 1.4em;
+  float: left;
+  color: white;
+  background: grey;
+  margin-right: 15px;
+  margin-top: 5px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.simplicioNavigation {
+  margin-bottom: 0px;
+  border: 0px none;
+}
+.simplicioNavigation a {
+  cursor: pointer;
+}
+.simplicioNavigation a#logo {
+  padding: 0px;
+  height: 60px;
+}
+.simplicioNavigation a#logo img {
+  height: 100%;
+}
+
+#admin-menu {
+  z-index: 9999;
+}
+
+body.admin-menu .simplicioNavigation.navbar-fixed-top {
+  margin-top: 29px !important;
+}
+
+.simplicio-horizontal-accordion {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.simplicio-horizontal-accordion .simplicio-accordion-elem {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  background-color: black;
+}
+.simplicio-horizontal-accordion .simplicio-accordion-elem img {
+  display: block;
+  position: relative;
+  left: 0px;
+  width: 100%;
+}
+.simplicio-horizontal-accordion .simplicio-accordion-elem .simplicio-accordion-caption {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(1, 1, 1, 0.5);
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+}
+.simplicio-horizontal-accordion .simplicio-accordion-elem .simplicio-accordion-caption h1, .simplicio-horizontal-accordion .simplicio-accordion-elem .simplicio-accordion-caption h2, .simplicio-horizontal-accordion .simplicio-accordion-elem .simplicio-accordion-caption h3, .simplicio-horizontal-accordion .simplicio-accordion-elem .simplicio-accordion-caption h4, .simplicio-horizontal-accordion .simplicio-accordion-elem .simplicio-accordion-caption h5, .simplicio-horizontal-accordion .simplicio-accordion-elem .simplicio-accordion-caption p {
+  color: white;
+}
+.simplicio-horizontal-accordion .simplicio-accordion-elem .simplicio-accordion-header {
+  display: block;
+  position: absolute;
+  top: 0px;
+  background-color: red;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 10px 0px;
+  -moz-transform-origin: 0px 100%;
+  -ms-transform-origin: 0px 100%;
+  -webkit-transform-origin: 0px 100%;
+  transform-origin: 0px 100%;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.simplicio-vertical-accordion .simplicio-accordion-elem .simplicio-accordion-header {
+  cursor: pointer;
+}
+.simplicio-vertical-accordion .simplicio-accordion-elem .simplicio-accordion-content {
+  height: 0px;
+}
+
+/*# sourceMappingURL=simplicio-tools.css.map */

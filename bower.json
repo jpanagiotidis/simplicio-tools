@@ -1,0 +1,22 @@
+{
+  "name": "simplicio-tools",
+  "main": "simplicio-tools.js",
+  "version": "0.0.1",
+  "authors": [
+    "jpanagiotidis [macos] <panagiotidisjonathan@gmail.com>"
+  ],
+  "description": "A javascript library for client side development.",
+  "keywords": [
+    "Javascript",
+    "Client"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libraries/",
+    "test",
+    "tests"
+  ]
+}
