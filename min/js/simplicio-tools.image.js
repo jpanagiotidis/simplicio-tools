@@ -1,0 +1,1 @@
+!function(a){simplicioTools.image={setVerticalPosition:function(b,c){var d,e=a(b).outerHeight();d=c?c:a(b).find("img"),a(d).each(function(b,c){var d=-(a(c).outerHeight()-e)/2;a(c).css("top",d)})}}}(jQuery);
