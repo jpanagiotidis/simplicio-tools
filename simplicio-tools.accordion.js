@@ -143,7 +143,7 @@
     }
 
     for (i in self.slides) {
-      self.setImagePosition(self.slides[i]);
+      simplicioTools.image.setVerticalPosition(self.elem);
     }
 
     self.setSlidesCaptions();
@@ -230,15 +230,6 @@
     }
 
     return out;
-  };
-
-  simplicioTools.accordion.horizontal.prototype.setImagePosition = function(elem){
-    var self = this;
-
-    $(elem).find('img').each(function(index, el) {
-      var topVal = -($(el).height() - self.currentHeight)/2
-      $(el).css('top', topVal);
-    });
   };
 
   simplicioTools.accordion.horizontal.prototype.openSlide = function(){
