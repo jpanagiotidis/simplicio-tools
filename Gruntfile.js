@@ -11,6 +11,7 @@ module.exports = function(grunt) {
       srcCss: '<%= project.srcAssets %>css/',
       minAssets: 'min/',
       minJs: '<%= project.minAssets %>js/',
+      minCss: '<%= project.minAssets %>css/',
       doc: 'doc/'
     },
     uglify: {
@@ -29,6 +30,13 @@ module.exports = function(grunt) {
           sassDir: '<%= project.srcSass %>',
           cssDir: '<%= project.srcCss %>'
         }
+      },
+      min: {
+        options: {
+          outputStyle: 'compressed',
+          sassDir: '<%= project.srcSass %>',
+          cssDir: '<%= project.minCss %>'
+        }
       }
     },
     'jsdoc-ng' : {
@@ -45,7 +53,7 @@ module.exports = function(grunt) {
       },
       compass: {
         files: '<%= project.srcSass %>{,*/}*.{scss,sass}',
-        tasks: ['compass:dev']
+        tasks: ['compass']
       }
     }
   });
