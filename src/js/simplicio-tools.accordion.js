@@ -1,6 +1,15 @@
 (function($){
+  /**
+   * @namespace
+   */
   simplicioTools.accordion = {};
   
+  /**
+   * Constructor for an horizontal accordion.
+   * @constructor
+   * @param {string} selector - The jQuery selector for the DOM element.
+   * @param {number} _ratio - The height to width ratio (height = ratio*width) for the whole accordion.
+   */
   simplicioTools.accordion.horizontal = function(selector, _ratio){
     var self = this;
 
@@ -251,7 +260,12 @@
 
 
 
-
+  /**
+   * Constructor for an vertical accordion.
+   * @constructor
+   * @param {string} selector - The jQuery selector for the DOM element.
+   * @param {number} _ratio - The height to width ratio (height = ratio*width) for the whole accordion.
+   */
   simplicioTools.accordion.vertical = function(selector, _ratio){
     var self = this;
 

@@ -1,6 +1,7 @@
 (function($){
   /**
    * A set of image manipulation functions
+   * @namespace
    */
   simplicioTools.image = {
     /**

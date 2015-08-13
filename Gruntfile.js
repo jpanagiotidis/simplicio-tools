@@ -6,11 +6,11 @@ module.exports = function(grunt) {
 
     project: {
       srcAssets: ['src/'],
-      srcJs: ['<%= project.srcAssets %>js'],
-      srcSass: ['<%= project.srcAssets %>sass'],
-      srcCss: ['<%= project.srcAssets %>css'],
+      srcJs: ['<%= project.srcAssets %>js/'],
+      srcSass: ['<%= project.srcAssets %>sass/'],
+      srcCss: ['<%= project.srcAssets %>css/'],
       minAssets: ['min/'],
-      cssAssets: ['']
+      doc: ['doc/']
     },
     compass: {
       dev: {
@@ -20,14 +20,16 @@ module.exports = function(grunt) {
         }
       }
     },
-    // jsdoc : {
-    //   dist : {
-    //     src: ['src/*.js'],
-    //     options: {
-    //       destination: 'doc'
-    //     }
-    //   }
-    // },
+    'jsdoc-ng' : {
+      'mysubtaskname' : {
+        src: ['<%= project.srcJs %>*.js', 'README.md'],
+        dest: 'docs',
+        template : 'jsdoc-ng'
+        // options: {
+        //   // ... 
+        // }
+      }
+    },
     watch: {
       compass: {
         files: '<%= project.srcSass %>{,*/}*.{scss,sass}',
@@ -37,6 +39,7 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-jsdoc-ng');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', []);

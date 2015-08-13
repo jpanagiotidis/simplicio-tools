@@ -1,6 +1,11 @@
+/** @namespace */
 var simplicioTools = {};
 
 (function($){
+  /**
+   * Some appearance functions
+   * @namespace
+   */
   simplicioTools.appearance = {
     init: function(){
       this.setFullFrames();
@@ -40,6 +45,7 @@ var simplicioTools = {};
     }
   };
 
+  /** @namespace */
   simplicioTools.scroller = {
     setScrollers: function(){
       var self = this;
@@ -68,6 +74,7 @@ var simplicioTools = {};
     }
   };
 
+  /** @namespace */
   simplicioTools.preload = {
     containerImages: function(selector) {
       var defer = $.Deferred();
