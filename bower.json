@@ -2,8 +2,9 @@
   "name": "simplicio-tools",
   "main": "simplicio-tools.js",
   "version": "0.0.1",
+  "repository": "https://github.com/jpanagiotidis/simplicio-tools.git",
   "authors": [
-    "jpanagiotidis [macos] <panagiotidisjonathan@gmail.com>"
+    "jpanagiotidis <panagiotidisjonathan@gmail.com>"
   ],
   "description": "A javascript library for client side development.",
   "keywords": [

@@ -5,33 +5,39 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     project: {
-      sassAssets: ['sass/'],
+      srcAssets: ['src/'],
+      srcJs: ['<%= project.srcAssets %>js'],
+      srcSass: ['<%= project.srcAssets %>sass'],
+      srcCss: ['<%= project.srcAssets %>css'],
+      minAssets: ['min/'],
       cssAssets: ['']
     },
-    sass: {
+    compass: {
       dev: {
         options: {
-          style: 'expanded',
-          compass: true
-        },
-        files: {
-          '<%= project.cssAssets %>simplicio-tools.css':'<%= project.sassAssets %>simplicio-tools.scss'
+          sassDir: '<%= project.srcSass %>',
+          cssDir: '<%= project.srcCss %>'
         }
       }
     },
+    // jsdoc : {
+    //   dist : {
+    //     src: ['src/*.js'],
+    //     options: {
+    //       destination: 'doc'
+    //     }
+    //   }
+    // },
     watch: {
-      sass: {
-        files: '<%= project.sassAssets %>{,*/}*.{scss,sass}',
-        tasks: ['sass:dev']
+      compass: {
+        files: '<%= project.srcSass %>{,*/}*.{scss,sass}',
+        tasks: ['compass:dev']
       }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', 
-    [
-      'watch'
-    ]);
+  grunt.registerTask('default', []);
 };
