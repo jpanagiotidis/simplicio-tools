@@ -1,5 +1,5 @@
 /** @namespace */
-var simplicioTools = {};
+window.simplicioTools = {};
 
 (function($){
   /**
