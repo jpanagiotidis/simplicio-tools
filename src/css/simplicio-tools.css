@@ -90,7 +90,7 @@ body.admin-menu .simplicioNavigation.navbar-fixed-top {
   display: block;
   position: absolute;
   bottom: 0px;
-  background-color: rgba(1, 1, 1, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   padding: 10px;
   opacity: 0;
@@ -108,21 +108,13 @@ body.admin-menu .simplicioNavigation.navbar-fixed-top {
   text-align: center;
   font-size: 1.4em;
   padding: 10px 0px;
-  -moz-transform-origin: 0px 100%;
-  -ms-transform-origin: 0px 100%;
-  -webkit-transform-origin: 0px 100%;
-  transform-origin: 0px 100%;
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
 }
 
-/* line 60, ../sass/_simplicio-accordion.scss */
+/* line 57, ../sass/_simplicio-accordion.scss */
 .simplicio-vertical-accordion .simplicio-accordion-elem .simplicio-accordion-header {
   cursor: pointer;
 }
-/* line 64, ../sass/_simplicio-accordion.scss */
+/* line 61, ../sass/_simplicio-accordion.scss */
 .simplicio-vertical-accordion .simplicio-accordion-elem .simplicio-accordion-content {
   height: 0px;
 }
