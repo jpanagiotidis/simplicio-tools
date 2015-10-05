@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="../src/css/simplicio-tools.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- // <script src="js/scripts.js"></script> -->
+
+    <div id="kappa-products-accordion" class="kappa-content-fullframe col-xs-12 simplicio-horizontal-accordion">
+      <div class="simplicio-accordion-elem">
+        <img src="http://localhost/apps/kappa-lab/site-new/source/dev/sites/default/files/styles/kappa_lab_gallery_image/public/images/products/38/dadabycurseofthemoon.jpg?itok=yvIST-MK">
+        <div class="simplicio-accordion-header">
+          Μπουκάλια
+        </div>
+        <div class="simplicio-accordion-caption">
+          <h3>Μπουκάλια</h3>
+          <p>μμμμμμμμ μμμμμμμμμ</p>
+        </div>
+      </div>          
+      <div class="simplicio-accordion-elem">
+        <img src="http://localhost/apps/kappa-lab/site-new/source/dev/sites/default/files/styles/kappa_lab_gallery_image/public/images/products/37/38075-adams.jpg?itok=trhcMocC">
+        <div class="simplicio-accordion-header">
+          Σωληνάκια
+        </div>
+        <div class="simplicio-accordion-caption">
+          <h3>Σωληνάκια</h3>
+          <p>νηγφνφηγν ηηηηηηηηηη δρρρρρρρρρρρρρ</p>
+        </div>
+      </div>          
+      <div class="simplicio-accordion-elem">
+        <img src="http://localhost/apps/kappa-lab/site-new/source/dev/sites/default/files/styles/kappa_lab_gallery_image/public/images/products/36/vogons.jpg?itok=jn7DkmzK">
+        <div class="simplicio-accordion-header">
+          Πιπετες
+        </div>
+        <div class="simplicio-accordion-caption">
+          <h3>Πιπετες</h3>
+          <p>ασφσδαφ δσαφ ασδφασφ ασδφσδαφασδφσδ φσα</p>
+        </div>
+      </div>      
+    </div>
+    
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="../bower_components/greensock/src/minified/TweenLite.min.js"></script>
+    <script type="text/javascript" src="../bower_components/greensock/src/minified/plugins/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="../src/js/simplicio-tools.js"></script>
+    <script type="text/javascript" src="../src/js/simplicio-tools.image.js"></script>
+    <script type="text/javascript" src="../src/js/simplicio-tools.accordion.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var gallery = new simplicioTools.accordion.horizontal('#kappa-products-accordion', 0.33);
+        // console.log(gallery);
+      });
+      // gallery.setSlides();
+    </script>
+  </body>
+</html>

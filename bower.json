@@ -1,7 +1,7 @@
 {
   "name": "simplicio-tools",
   "main": "simplicio-tools.js",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "repository": "https://github.com/jpanagiotidis/simplicio-tools.git",
   "authors": [
     "jpanagiotidis <panagiotidisjonathan@gmail.com>"
@@ -19,5 +19,10 @@
     "libraries/",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "greensock": "~1.18.0"
+  }
 }
